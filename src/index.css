@@ -1,0 +1,43 @@
+@import './fonts/css/clash-display.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: 'ClashDisplay-Variable';
+  font-weight: 500;
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 100vh;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #202020cc;
+}
+
+.container {
+  max-width: 1130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
